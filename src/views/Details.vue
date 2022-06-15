@@ -7,12 +7,11 @@
               width="100%"
               height="100%"
             >
-<div  class="glass">
   <v-row>
     <v-col  cols="12" lg="3" md="12" sm="12">
        <v-img src="../../src/assets/fast.jpg"  width="100%"></v-img>
     </v-col>
-    <v-col  cols="12" lg="9" md="12" sm="12">
+    <v-col  cols="12" lg="9" md="12" sm="12" class="glass">
        <v-card-title class="white--text">{{movie.title}}<span class="ml-2">({{movie.release_date.split("-")[0]}})</span> <v-chip color="#E7B31F" class="ml-2 px-5">{{movie.status}}</v-chip><span class="ml-5"> {{movie.runtime}}</span> </v-card-title>
        <v-card-subtitle  class="white--text">{{movie.original_language}}</v-card-subtitle>
        <v-card-actions> <v-rating
@@ -30,7 +29,6 @@
   </v-row>
 
  
-</div>
 </v-img>
   </v-card>
   <v-card tile width="100%" height="300" color="transparent" v-else>
@@ -144,10 +142,7 @@ export default {
 .glass {
   position: relative;
   background: inherit;
-  overflow: hidden;
-  top: 150px;
-  width: 80%;
-  height: 50%;
+  
   border-radius: 1px;
   box-shadow: 0 6px 0px rgba(0, 0, 0, 0.1), 0 6px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
