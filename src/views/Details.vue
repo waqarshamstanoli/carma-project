@@ -1,6 +1,6 @@
 <template>
 <v-container>
-  <v-card tile width="100%" height="500" color="transparent" class="mt-16" v-if="movie" >
+  <v-card tile width="100%"  color="transparent" class="mt-16" v-if="movie" >
   <v-img
               :src="require('../../src/assets/card2.jpg')"
               class=""
@@ -10,7 +10,7 @@
 <div  class="glass">
   <v-row>
     <v-col  cols="12" lg="3" md="12" sm="12">
-       <v-img src="../../src/assets/fast.jpg" height="100%" width="100%"></v-img>
+       <v-img src="../../src/assets/fast.jpg"  width="100%"></v-img>
     </v-col>
     <v-col  cols="12" lg="9" md="12" sm="12">
        <v-card-title class="white--text">{{movie.title}}<span class="ml-2">({{movie.release_date.split("-")[0]}})</span> <v-chip color="#E7B31F" class="ml-2 px-5">{{movie.status}}</v-chip><span class="ml-5"> {{movie.runtime}}</span> </v-card-title>
